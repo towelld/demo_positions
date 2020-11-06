@@ -93,19 +93,20 @@
       top: 6
       height: 8
       width: 24
-      fields: [v_clearer_type_breaks.clearer, v_clearer_type_breaks.exception_reason_code,
+      fields: [v_clearer_type_breaks.name, v_clearer_type_breaks.clearer, v_clearer_type_breaks.exception_reason_code,
         v_clearer_type_breaks.count]
-      pivots: [v_clearer_type_breaks.clearer]
+      pivots: [v_clearer_type_breaks.exception_reason_code]
       filters:
         v_clearer_type_breaks.clearer: "-NULL"
-      sorts: [v_clearer_type_breaks.clearer 0, v_clearer_type_breaks.exception_reason_code]
+      sorts: [v_clearer_type_breaks.name, v_clearer_type_breaks.exception_reason_code
+          0]
       limit: 500
       total: true
       query_timezone: Europe/London
       show_view_names: false
       show_row_numbers: false
       transpose: false
-      truncate_text: false
+      truncate_text: true
       hide_totals: false
       hide_row_totals: false
       size_to_fit: true
@@ -113,47 +114,21 @@
       limit_displayed_rows: false
       enable_conditional_formatting: false
       header_text_alignment: left
-      header_font_size: '12'
-      rows_font_size: '12'
-      conditional_formatting_include_totals: true
-      conditional_formatting_include_nulls: true
+      header_font_size: '9'
+      rows_font_size: '9'
+      conditional_formatting_include_totals: false
+      conditional_formatting_include_nulls: false
       show_sql_query_menu_options: false
       show_totals: true
       show_row_totals: true
       series_labels:
-        v_clearer_type_breaks.exception_reason_code: Reason
-        v_clearer_type_breaks.clearer: Clearer
         v_clearer_type_breaks.count: Count
-      series_column_widths:
-        v_clearer_type_breaks.exception_reason_code: 193
-        v_clearer_type_breaks.clearer: 100
+        v_clearer_type_breaks.exception_reason_code: Reason
       series_cell_visualizations:
         v_clearer_type_breaks.count:
           is_active: false
-          __FILE: demo_positions/dashboards/breaks_by_clearer.dashboard.lookml
-          __LINE_NUM: 132
       series_text_format:
         v_clearer_type_breaks.count:
-          fg_color: "#646569"
-          align: right
-          __FILE: demo_positions/dashboards/breaks_by_clearer.dashboard.lookml
-          __LINE_NUM: 135
           bold: true
-        v_clearer_type_breaks.clearer:
-          align: right
-          __FILE: demo_positions/dashboards/breaks_by_clearer.dashboard.lookml
-          __LINE_NUM: 138
-        v_clearer_type_breaks.exception_reason_code:
-          __FILE: demo_positions/dashboards/breaks_by_clearer.dashboard.lookml
-          __LINE_NUM: 139
-      limit_displayed_rows_values:
-        show_hide: hide
-        first_last: first
-        num_rows: 0
-      conditional_formatting: [{type: along a scale..., value: !!null '', background_color: "#FA8D29",
-          font_color: !!null '', color_application: {collection_id: gresham, palette_id: gresham-sequential-0,
-            __FILE: demo_positions/dashboards/breaks_by_clearer.dashboard.lookml, __LINE_NUM: 145},
-          bold: false, italic: false, strikethrough: false, fields: !!null '', __FILE: demo_positions/dashboards/breaks_by_clearer.dashboard.lookml,
-          __LINE_NUM: 144}]
-      series_types: {}
       defaults_version: 1
+      series_types: {}
