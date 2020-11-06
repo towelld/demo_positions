@@ -1,5 +1,5 @@
 - dashboard: breaks_by_clearer
-  title: Breaks by Clearer
+  title: Position Breaks by Clearer
   layout: static
   width: 1632
   tile_size: 68
@@ -15,11 +15,11 @@
   elements:
     - name: breaks_by_clearer_chart
       type: looker_column
-      title: Breaks by Clearer
+      title: Position Breaks by Clearer
       left: 0
       top: 0
-      height: 6
-      width: 12
+      height: 8
+      width: 24
       model: demo_positions
       explore: v_clearer_type_breaks
       fields: [v_clearer_type_breaks.clearer, v_clearer_type_breaks.name, v_clearer_type_breaks.count]
