@@ -15,10 +15,9 @@
   elements:
     - name: breaks_by_clearer_chart
       type: looker_column
-      title: Position Breaks by Clearer
       left: 0
       top: 0
-      height: 8
+      height: 6
       width: 24
       model: demo_positions
       explore: v_clearer_type_breaks
