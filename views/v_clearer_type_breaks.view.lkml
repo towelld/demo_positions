@@ -23,6 +23,7 @@ view: v_clearer_type_breaks {
 
   measure: count {
     type: count
+    value_format: "0"
     drill_fields: [name]
   }
 }
