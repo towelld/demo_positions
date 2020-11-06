@@ -91,7 +91,7 @@
       type: looker_grid
       left: 0
       top: 6
-      height: 6
+      height: 8
       width: 24
       fields: [v_clearer_type_breaks.clearer, v_clearer_type_breaks.exception_reason_code,
         v_clearer_type_breaks.count]
