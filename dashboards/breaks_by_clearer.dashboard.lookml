@@ -108,7 +108,7 @@
       truncate_text: true
       hide_totals: false
       hide_row_totals: false
-      size_to_fit: false
+      size_to_fit: true
       table_theme: gray
       limit_displayed_rows: false
       enable_conditional_formatting: false
