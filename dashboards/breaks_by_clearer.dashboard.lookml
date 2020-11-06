@@ -14,6 +14,7 @@
 
   elements:
     - name: breaks_by_clearer_chart
+      title: ""
       type: looker_column
       left: 0
       top: 0
