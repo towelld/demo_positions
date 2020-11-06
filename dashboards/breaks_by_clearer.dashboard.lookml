@@ -84,7 +84,7 @@
       series_types: {}
       defaults_version: 1
 
-    - name: breaks_by_clearer_table
+    - name: breaks_by_clearer_grid
       title: ""
       model: demo_positions
       explore: v_clearer_type_breaks
@@ -105,7 +105,7 @@
       show_view_names: false
       show_row_numbers: false
       transpose: false
-      truncate_text: true
+      truncate_text: false
       hide_totals: false
       hide_row_totals: false
       size_to_fit: true
@@ -126,23 +126,34 @@
         v_clearer_type_breaks.count: Count
       series_column_widths:
         v_clearer_type_breaks.exception_reason_code: 193
-        v_clearer_type_breaks.count: 185
+        v_clearer_type_breaks.clearer: 100
       series_cell_visualizations:
         v_clearer_type_breaks.count:
           is_active: false
+          __FILE: demo_positions/dashboards/breaks_by_clearer.dashboard.lookml
+          __LINE_NUM: 132
       series_text_format:
         v_clearer_type_breaks.count:
           fg_color: "#646569"
           align: right
+          __FILE: demo_positions/dashboards/breaks_by_clearer.dashboard.lookml
+          __LINE_NUM: 135
+          bold: true
         v_clearer_type_breaks.clearer:
           align: right
-        v_clearer_type_breaks.exception_reason_code: {}
+          __FILE: demo_positions/dashboards/breaks_by_clearer.dashboard.lookml
+          __LINE_NUM: 138
+        v_clearer_type_breaks.exception_reason_code:
+          __FILE: demo_positions/dashboards/breaks_by_clearer.dashboard.lookml
+          __LINE_NUM: 139
       limit_displayed_rows_values:
         show_hide: hide
         first_last: first
         num_rows: 0
       conditional_formatting: [{type: along a scale..., value: !!null '', background_color: "#FA8D29",
-          font_color: !!null '', color_application: {collection_id: gresham, palette_id: gresham-sequential-0},
-          bold: false, italic: false, strikethrough: false, fields: !!null ''}]
+          font_color: !!null '', color_application: {collection_id: gresham, palette_id: gresham-sequential-0,
+            __FILE: demo_positions/dashboards/breaks_by_clearer.dashboard.lookml, __LINE_NUM: 145},
+          bold: false, italic: false, strikethrough: false, fields: !!null '', __FILE: demo_positions/dashboards/breaks_by_clearer.dashboard.lookml,
+          __LINE_NUM: 144}]
       series_types: {}
       defaults_version: 1
