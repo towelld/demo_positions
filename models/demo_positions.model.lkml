@@ -13,4 +13,6 @@ datagroup: demo_positions_default_datagroup {
 
 persist_with: demo_positions_default_datagroup
 
+explore: v_account_type_breaks {}
+explore: v_cash_breaks {}
 explore: v_clearer_type_breaks {}
