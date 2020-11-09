@@ -81,8 +81,10 @@
       pivots: [v_account_type_breaks.exception_reason_code]
       filters:
         v_account_type_breaks.account: "-NULL"
-      sorts: [v_account_type_breaks.name, v_account_type_breaks.account, v_account_type_breaks.exception_reason_code 0]
+      sorts: [v_account_type_breaks.name, v_account_type_breaks.account, v_account_type_breaks.exception_reason_code]
+      subtotals: [v_account_type_breaks.name]
       limit: 500
+      total: true
       query_timezone: Europe/London
       show_view_names: false
       show_row_numbers: false
@@ -111,7 +113,11 @@
         v_account_type_breaks.count:
           is_active: false
           value_display: true
+          __FILE: demo_positions/dashboards/breaks_by_account.dashboard.lookml
+          __LINE_NUM: 112
       series_text_format:
         v_account_type_breaks.count:
           bold: true
+          __FILE: demo_positions/dashboards/breaks_by_account.dashboard.lookml
+          __LINE_NUM: 116
       defaults_version: 1
