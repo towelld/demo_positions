@@ -26,7 +26,7 @@
       pivots: [v_account_type_breaks.account]
       filters:
         v_account_type_breaks.account: "-NULL"
-      sorts: [v_account_type_breaks.count desc 0, v_account_type_breaks.account]
+      sorts: [v_account_type_breaks.count desc 0, v_account_type_breaks.account, v_account_type_breaks.name]
       limit: 500
       query_timezone: Europe/London
       x_axis_gridlines: true
