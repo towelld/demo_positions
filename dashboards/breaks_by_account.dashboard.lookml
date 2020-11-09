@@ -81,8 +81,7 @@
       pivots: [v_account_type_breaks.exception_reason_code]
       filters:
         v_account_type_breaks.account: "-NULL"
-      sorts: [v_account_type_breaks.exception_reason_code 0, v_account_type_breaks.account
-          desc]
+      sorts: [v_account_type_breaks.name, v_account_type_breaks.account, v_account_type_breaks.exception_reason_code 0]
       limit: 500
       query_timezone: Europe/London
       show_view_names: false
