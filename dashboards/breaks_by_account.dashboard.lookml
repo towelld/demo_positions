@@ -63,3 +63,56 @@
           type: linear}]
       series_types: {}
       defaults_version: 1
+
+
+    - name: breaks_by_account_grid
+      title: ""
+      model: demo_positions
+      explore: v_account_type_breaks
+      type: looker_grid
+      left: 0
+      top: 6
+      height: 8
+      width: 24
+      explore: v_account_type_breaks
+      type: looker_grid
+      fields: [v_account_type_breaks.name, v_account_type_breaks.account, v_account_type_breaks.count,
+        v_account_type_breaks.exception_reason_code]
+      pivots: [v_account_type_breaks.exception_reason_code]
+      filters:
+        v_account_type_breaks.account: "-NULL"
+      sorts: [v_account_type_breaks.exception_reason_code 0, v_account_type_breaks.account
+          desc]
+      limit: 500
+      query_timezone: Europe/London
+      show_view_names: false
+      show_row_numbers: false
+      transpose: false
+      truncate_text: true
+      hide_totals: false
+      hide_row_totals: false
+      size_to_fit: true
+      table_theme: gray
+      limit_displayed_rows: false
+      enable_conditional_formatting: false
+      header_text_alignment: right
+      header_font_size: '9'
+      rows_font_size: '9'
+      conditional_formatting_include_totals: false
+      conditional_formatting_include_nulls: false
+      show_sql_query_menu_options: false
+      show_totals: true
+      show_row_totals: true
+      series_labels:
+        v_account_type_breaks.account: Account
+        v_account_type_breaks.exception_reason_code: Reason
+        v_account_type_breaks.count: Count
+        v_account_type_breaks.name: Name
+      series_cell_visualizations:
+        v_account_type_breaks.count:
+          is_active: false
+          value_display: true
+      series_text_format:
+        v_account_type_breaks.count:
+          bold: true
+      defaults_version: 1
