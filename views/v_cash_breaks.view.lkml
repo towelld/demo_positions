@@ -70,4 +70,12 @@ view: v_cash_breaks {
     type: count
     drill_fields: []
   }
+
+  measure: sum {
+    type: sum
+    sql: ${amount};;
+    value_format: "#,##0.00"
+    drill_fields: []
+  }
+
 }
