@@ -1,5 +1,5 @@
 - dashboard: breaks_by_team
-  title: Breaks by Team Over $5m
+  title: Breaks Over $5m by Team
   layout: static
   width: 1632
   tile_size: 68
