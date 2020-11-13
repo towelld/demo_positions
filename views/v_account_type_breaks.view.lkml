@@ -22,7 +22,8 @@ view: v_account_type_breaks {
   }
 
   measure: count {
-    type: count
+    type: sum
+    sql: ${exception_count};;
     drill_fields: [name]
   }
 }
